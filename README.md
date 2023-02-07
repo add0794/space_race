@@ -15,6 +15,8 @@ Details for the assignment are as follows, based on Udemy’s 100 Days of Code b
 
   *I'm sure that you'll discover many more questions that you can formulate and answer with this dataset! Use it to practice what you learnt about creating various types of charts and visualisations, from choropleths to sunburst charts to segmented bar charts and see if you can turn data into insight. Good luck!*<br />
 
+I complete the assignment by discussing how my experience would have been different had I used Python.
+
 ### *Q1: Who launched the most missions in any given year?*
 
 **A**: RVSN USSR in 1977, in addition to launching the most missions, in total.<br /><br />
@@ -30,7 +32,7 @@ Details for the assignment are as follows, based on Udemy’s 100 Days of Code b
 ### *Q3: Which years, and months, are the most popular for launches?*
 
 **A**: Launches increased and hit a peak in 1971, then slightly decreased until they reached a relative peak in the late 1980s. Then on, launches decreased until 2014, when they suddenly increased. They decreased precipitously in 2020.<br /><br />
-![Launch Popularity over Time](https://github.com/add0794/space_race/blob/5e87d8f73edd8a67a13af8e9a45b8779fc4a8ce0/Launch%20Popularity%20over%20Time.png)
+![Launch Popularity over Time](https://github.com/add0794/space_race/blob/1aa116e21b1f960c4bcd02e8f0192b1d1081bf01/Q3.a.png)
 <br /><br />
 Additionally, December was the most popular month for launches.<br /><br />
 ![Number of Missions by Month](https://github.com/add0794/space_race/blob/3ec51070fc970af9d3b92e33b54d701d6dbdbff1/Q3.b.png)
@@ -39,7 +41,7 @@ Additionally, December was the most popular month for launches.<br /><br />
 
 ### *Q4: Have space missions gotten safer, or has the chance of failure remained unchanged?*
 
-**A**: When space missions first began, the chance of failure was high. Space missions have increased, but failures have decreased substantially. That said, while space missions have gotten safer, there remains the chance of failure.<br /><br />
+**A**: When space missions first began, the chance of failure was high. While space missions have increased over, failures have decreased substantially. In fact, approximately 90% of launches are success. That said, there remains the chance of failure.<br /><br />
 ![Number of Missions by Success Rate](https://github.com/add0794/space_race/blob/3ec51070fc970af9d3b92e33b54d701d6dbdbff1/Q4.png)
 <br /><br />
 **Approach**: Using the mission_status column, I calculated the occurrences for each unique value (i.e. success, failure, prelaunch failure, and partial failure) by using the COUNTIFS function in each year. I plotted year (x-axis) and occurrences as the y-axis, with the types of occurrences to group by type.
