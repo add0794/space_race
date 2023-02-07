@@ -17,6 +17,8 @@ Details for the assignment are as follows, based on Udemy’s 100 Days of Code b
 
 I complete the assignment by discussing how my experience would have been different had I used Python.
 
+**If you're interested in seeing the analysis, you can download my Excel journey [here](https://github.com/add0794/space_race/blob/ec7dfef8587375701b121c63f3e3d9451f39764f/mission_launches.xlsx).**
+
 ### *Q1: Who launched the most missions in any given year?*
 
 **A**: RVSN USSR in 1977, in addition to launching the most missions, in total.<br /><br />
