@@ -22,29 +22,29 @@ I complete the assignment by discussing how my experience would have been differ
 ### *Q1: Who launched the most missions in any given year?*
 
 **A**: RVSN USSR in 1977, in addition to launching the most missions, in total.<br /><br />
-![Number of Missions by Organization](https://github.com/add0794/space_race/blob/3ec51070fc970af9d3b92e33b54d701d6dbdbff1/Q1.a.png)
+![Number of Missions by Organization](https://github.com/add0794/space_race/blob/ab9840281edc842711185c71b05d8fa938189a49/images/Q1.a.png)
 <br /><br />
 **Approach**: By identifying the organizations (columns) and years of each mission (rows), I counted how often each organization’s mission by using COUNTIFS. That provided a table of occurrences, where I then found the maximum value using the MAX function and used "find" to find the organization and given year: RVSN USSR in 1977.
 
 ### *Q2: How has the cost of a space mission varied over time?*
 
-**A**: The cost of space missions peaked in the mid-1970s, then decreased to null ($0), as it had been previously. It peaked again in the late 1980s, then began to decrease. It continues to remain low.<br /><br />![Average Cost of Space Missions by Year](https://github.com/add0794/space_race/blob/3ec51070fc970af9d3b92e33b54d701d6dbdbff1/Q2.png)<br /><br />
+**A**: The cost of space missions peaked in the mid-1970s, then decreased to null ($0), as it had been previously. It peaked again in the late 1980s, then began to decrease. It continues to remain low.<br /><br />![Average Cost of Space Missions by Year](https://github.com/add0794/space_race/blob/ab9840281edc842711185c71b05d8fa938189a49/images/Q2.png)<br /><br />
 **Approach**: First, I added "N/A" for the missions in which any cell for the Price column was empty. I took the average price by using the AVERAGEIF function and included an IFERROR to account for those years where there no missions. I plotted year (x-axis) against missions (y-axis).
 
 ### *Q3: Which years, and months, are the most popular for launches?*
 
 **A**: Launches increased and hit a peak in 1971, then slightly decreased until they reached a relative peak in the late 1980s. Then on, launches decreased until 2014, when they suddenly increased. They decreased precipitously in 2020.<br /><br />
-![Launch Popularity over Time](https://github.com/add0794/space_race/blob/1aa116e21b1f960c4bcd02e8f0192b1d1081bf01/Q3.a.png)
+![Launch Popularity over Time](https://github.com/add0794/space_race/blob/ab9840281edc842711185c71b05d8fa938189a49/images/Q3.a.png)
 <br /><br />
 Additionally, December was the most popular month for launches.<br /><br />
-![Number of Missions by Month](https://github.com/add0794/space_race/blob/3ec51070fc970af9d3b92e33b54d701d6dbdbff1/Q3.b.png)
+![Number of Missions by Month](https://github.com/add0794/space_race/blob/ab9840281edc842711185c71b05d8fa938189a49/images/Q3.b.png)
 <br /><br />
 **Approach**: To find the number of missions per year, I used COUNTIF. I plotted year (x-axis) and occurrences as the y-axis.
 
 ### *Q4: Have space missions gotten safer, or has the chance of failure remained unchanged?*
 
 **A**: When space missions first began, the chance of failure was high. While space missions have increased over, failures have decreased substantially. In fact, approximately 90% of launches are success. That said, there remains the chance of failure.<br /><br />
-![Number of Missions by Success Rate](https://github.com/add0794/space_race/blob/3ec51070fc970af9d3b92e33b54d701d6dbdbff1/Q4.png)
+![Number of Missions by Success Rate](https://github.com/add0794/space_race/blob/ab9840281edc842711185c71b05d8fa938189a49/images/Q4.png)
 <br /><br />
 **Approach**: Using the mission_status column, I calculated the occurrences for each unique value (i.e. success, failure, prelaunch failure, and partial failure) by using the COUNTIFS function in each year. I plotted year (x-axis) and occurrences as the y-axis, with the types of occurrences to group by type.
 
